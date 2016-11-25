@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="Paint.SecondPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Paint"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel x:ConnectionId='1' Padding="10" Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+        <TextBlock Text="Choose Template :" Margin="10" HorizontalAlignment="Center"/>
+        <GridView x:ConnectionId='2' Name="MyGridView"                                                 >
+            <GridViewItem x:ConnectionId='3' Name="GridViewItem1" Width="340" Background="DodgerBlue">
+                <Grid>
+                    <Image x:ConnectionId='10' x:Name="image" Source="Images/EmptyPageImg.png" Stretch="Uniform" />
+                    <Rectangle Fill="#66000000"/>
+                    <TextBlock Foreground="White" HorizontalAlignment="Center" 
+                               Text="Empty Page" FontWeight="Bold" VerticalAlignment="Center"/>
+                </Grid>
+            </GridViewItem>
+            <GridViewItem x:ConnectionId='4' Name="GridViewItem2" Background="DodgerBlue">
+                <Grid>
+                        <Image x:ConnectionId='9' x:Name="image1" Source="Images/Y_Symetrie.png" Stretch="Uniform" />
+                        <Rectangle Fill="#66000000"/>
+                    <TextBlock Foreground="White" HorizontalAlignment="Center"
+                               Text="Symetire_Y page" FontWeight="Bold" VerticalAlignment="Center"/>
+                </Grid>
+                
+            </GridViewItem>
+            <GridViewItem x:ConnectionId='5' Name="GridViewItem3" Background="DodgerBlue">
+                
+                    
+                    <Grid>
+                        <Image x:ConnectionId='8' x:Name="image2" Source="Images/X_Y_Symetrie.png" Stretch="Uniform" />
+                        <Rectangle Fill="#66000000"/>
+                        <TextBlock Foreground="White" HorizontalAlignment="Center" 
+                               Text="Symetrie_X_Y page" FontWeight="Bold" VerticalAlignment="Center"/>
+                </Grid>
+                
+            </GridViewItem>
+            <GridViewItem x:ConnectionId='6' Name="GridViewItem4" Background="DodgerBlue">
+                <Grid>
+                    <Image x:ConnectionId='7' x:Name="image3" Source="Images/X_Y_Z_Symetrie.png" Stretch="Uniform" />
+                    <Rectangle Fill="#66000000"/>
+                    <TextBlock Foreground="White" HorizontalAlignment="Center" 
+                               Text="Symetrie_X_Y_Z page" FontWeight="Bold" VerticalAlignment="Center" />
+                </Grid>
+            </GridViewItem>
+        </GridView>
+    </StackPanel>
+</Page>
+

@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="Paint.Y_Symetrie"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Paint"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   
+    mc:Ignorable="d">
+
+    <Grid Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2"  BorderBrush="LightGray" BorderThickness="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Name="Grid1" Background="White"   Grid.Column="0">
+                <InkCanvas Name="InkCanvas1"></InkCanvas>          
+            </Grid>                                                
+            <Grid Name="Grid2" Background="White"  Grid.Column="1" >
+                <InkCanvas Name="InkCanvas2" RenderTransformOrigin="0.5,0.5">
+                    <InkCanvas.RenderTransform>
+                        <CompositeTransform ScaleX="-1"/>
+                    </InkCanvas.RenderTransform>
+                </InkCanvas>
+            </Grid>
+            <Rectangle Name="Rect1" Grid.ColumnSpan="2" VerticalAlignment="Stretch" Width="1" Fill="Gray"/>
+        </Grid>
+        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          ScrollViewer.HorizontalScrollMode="Auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                          ScrollViewer.VerticalScrollMode="Disabled"
+                          Grid.Row="2" 
+                      Background="{ThemeResource AppBarBackgroundThemeBrush}">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Red" Click="Red_Click" Background="red" Width="30" Height="30" Margin="5"/>
+                <Button Name="Blue" Click="Blue_Click" Background="DarkBlue" Width="30" Height="30" Margin="5"/>
+                <Button Name="Green" Click="Green_Click" Background="DarkGreen" Width="30" Height="30" Margin="5"/>
+                <Button Name="Yello" Click="Yello_Click" Background="Yellow" Width="30" Height="30" Margin="5"/>
+                <Button Name="LightGray" Click="LightGray_Click" Background="LightGray" Width="30" Height="30" Margin="5"/>
+                <Button Name="Black" Click="Black_Click" Background="Black" Width="30" Height="30" Margin="5"/>
+                <Button Name="Gray" Click="Gray_Click" Background="Gray" Width="30" Height="30" Margin="5"/>
+                <Button Name="White" Click="White_Click" Background="White" Width="30" Height="30" Margin="5" BorderBrush="Black" BorderThickness="1"/>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          ScrollViewer.HorizontalScrollMode="Auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                          ScrollViewer.VerticalScrollMode="Disabled"
+                          Grid.Row="2" Grid.Column="1"
+                      Background="{ThemeResource AppBarBackgroundThemeBrush}">
+            <StackPanel Orientation="Horizontal" >
+                <Button Content="" FontFamily="Segoe MDL2 Assets" 
+                        Background="{x:Null}" FontSize="25" FontWeight="Bold"
+                        Margin="5" Name="RestartButton" Click="RestartButton_Click"/>
+                <Button Background="{x:Null}" FontFamily="Segoe MDL2 Assets" Content="" 
+                        FontSize="25" FontWeight="Bold" Name="SmallPen" 
+                        Click="SmallPen_Click"/>
+                <Button Background="{x:Null}" FontFamily="Segoe MDL2 Assets"
+                        Content="" FontSize="25" FontWeight="Bold" Name="BigPen" 
+                        Click="BigPen_Click"/>
+                <Button Content="" FontFamily="Segoe MDL2 Assets" Background="{x:Null}"
+                        Name="HideBorder" Click="HideBorder_Click" FontSize="25"
+                        FontWeight="Bold"/>
+                <InkCanvas Name="ink" ></InkCanvas>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
