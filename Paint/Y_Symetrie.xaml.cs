@@ -31,6 +31,7 @@ namespace Paint
     {
         InkDrawingAttributes attr = new InkDrawingAttributes();
         bool v = true;
+        bool v2 = true;
          
         
         public Y_Symetrie()
@@ -86,9 +87,22 @@ namespace Paint
 
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Y_Symetrie));
+            //Frame.Navigate(typeof(Y_Symetrie));
+            if (v2)
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas2.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
+            else
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas2.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
         }
-
         private void SmallPen_Click(object sender, RoutedEventArgs e)
         {
             attr.PenTip = PenTipShape.Circle;
@@ -132,5 +146,7 @@ namespace Paint
             ObservableCollection<ToolBarColor> ListOfColor = new ObservableCollection<ToolBarColor>(ToolBarColor.AllColor());
             MyGridView.ItemsSource = ListOfColor;
         }
+
+       
     }
 }

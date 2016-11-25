@@ -33,7 +33,7 @@ namespace Paint
          
         InkDrawingAttributes attr = new InkDrawingAttributes();
         bool v = true;
-        
+        bool v2 = true;
         public MainPage()
         {
             this.InitializeComponent();
@@ -92,11 +92,28 @@ namespace Paint
             attr.Color = ToolBarColor.GetColor(color.Id);
             UpdateInkPresenter();
         }
-        
 
+        
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage));
+            if (v2)
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = Windows.UI.Input.Inking.InkInputProcessingMode.Erasing;
+                InkCanvas2.InkPresenter.InputProcessingConfiguration.Mode = Windows.UI.Input.Inking.InkInputProcessingMode.Erasing;
+                InkCanvas3.InkPresenter.InputProcessingConfiguration.Mode = Windows.UI.Input.Inking.InkInputProcessingMode.Erasing;
+                InkCanvas4.InkPresenter.InputProcessingConfiguration.Mode = Windows.UI.Input.Inking.InkInputProcessingMode.Erasing;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
+            else
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas2.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas3.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas4.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
         }
 
         private void SmallPen_Click(object sender, RoutedEventArgs e)

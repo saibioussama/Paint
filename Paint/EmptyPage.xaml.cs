@@ -36,7 +36,7 @@ namespace Paint
     public sealed partial class EmptyPage : Page
     {
         InkDrawingAttributes attr = new InkDrawingAttributes();
-        
+        bool v2 = true;
         public EmptyPage()
         {
             this.InitializeComponent();            
@@ -111,10 +111,21 @@ namespace Paint
             attr.Color = ToolBarColor.GetColor(color.Id);
             UpdateInkPresenter();
         }
-
+        
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(EmptyPage));
+            if (v2)
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = Windows.UI.Input.Inking.InkInputProcessingMode.Erasing;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
+            else
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
         }
 
         private void SmallPen_Click(object sender, RoutedEventArgs e)

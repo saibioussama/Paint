@@ -31,7 +31,7 @@ namespace Paint
     {
         InkDrawingAttributes attr = new InkDrawingAttributes();
         bool v = true;
-        
+        bool v2 = true;
        
         public X_Y_Z_Symetrie()
         {
@@ -98,10 +98,35 @@ namespace Paint
             attr.Color = ToolBarColor.GetColor(color.Id);
             UpdateInkPresenter();
         }
-
+        
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(X_Y_Z_Symetrie));
+            if (v2)
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas2.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas3.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas4.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas5.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas6.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas7.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                InkCanvas8.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Erasing;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
+            else
+            {
+                InkCanvas1.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas2.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas3.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas4.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas5.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas6.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas7.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                InkCanvas8.InkPresenter.InputProcessingConfiguration.Mode = InkInputProcessingMode.Inking;
+                v2 = !v2;
+                RestartButton.Content = "";
+            }
         }
 
         private void SmallPen_Click(object sender, RoutedEventArgs e)
