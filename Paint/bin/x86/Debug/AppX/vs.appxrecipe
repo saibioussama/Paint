@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>769bc99b-5e8c-43cb-a90c-5ba06b50ab14</PackageIdentityName>
     <PackageIdentityPublisher>CN=SAIBIOUSSAMA</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>1AD213C188CCA2C2C290658314998DCBB9928C75DF2D228DEABE13766470E0C0</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>2B7ACB06E8FBC31919AB502D0347083BD0E29F4AE60D27EFAF5B142A51937B6B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>769bc99b-5e8c-43cb-a90c-5ba06b50ab14_1.0.0.0_x86__crbvmmhb88c7m</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>769bc99b-5e8c-43cb-a90c-5ba06b50ab14_crbvmmhb88c7m!App</RegisteredUserModeAppID>
     <RegisteredPackageID>769bc99b-5e8c-43cb-a90c-5ba06b50ab14</RegisteredPackageID>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-24T21:15:20.904</Modified>
+      <Modified>2016-11-25T21:41:35.624</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\bin\x86\Debug\Paint.exe">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\Paint.exe">
       <PackagePath>entrypoint\Paint.exe</PackagePath>
-      <Modified>2016-11-24T21:15:18.014</Modified>
+      <Modified>2016-11-25T21:41:32.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,207 +448,207 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\BadgeLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:05:09.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\BadgeLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\BadgeLogo.scale-125.png">
       <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:04:26.167</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\BadgeLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\BadgeLogo.scale-150.png">
       <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:03:42.018</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\BadgeLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\BadgeLogo.scale-200.png">
       <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:02:53.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\BadgeLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:02:03.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:07:25.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:47:24.407</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:48:54.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:48:13.573</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:44:53.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:53:29.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square310x310Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square310x310Logo.scale-125.png">
       <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:54:57.245</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square310x310Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square310x310Logo.scale-150.png">
       <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:54:17.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square310x310Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square310x310Logo.scale-200.png">
       <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:51:15.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square310x310Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square310x310Logo.scale-400.png">
       <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:50:29.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:58:05.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:00:03.234</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:59:20.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:56:35.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:41:49.872</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square71x71Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square71x71Logo.scale-125.png">
       <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:43:25.623</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square71x71Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square71x71Logo.scale-150.png">
       <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:42:39.197</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square71x71Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square71x71Logo.scale-200.png">
       <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:40:36.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square71x71Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:39:35.740</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:37:10.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:35:42.442</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:34:53.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:33:17.827</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:34:06.548</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:08:52.847</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Images\Background.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Images\Background.png">
       <PackagePath>Images\Background.png</PackagePath>
       <Modified>2016-11-23T19:40:13.855</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Images\EmptyPageImg.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Images\EmptyPageImg.png">
       <PackagePath>Images\EmptyPageImg.png</PackagePath>
       <Modified>2016-11-16T18:28:53.231</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Images\X_Y_Symetrie.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Images\X_Y_Symetrie.png">
       <PackagePath>Images\X_Y_Symetrie.png</PackagePath>
       <Modified>2016-11-16T18:28:53.243</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Images\X_Y_Z_Symetrie.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Images\X_Y_Z_Symetrie.png">
       <PackagePath>Images\X_Y_Z_Symetrie.png</PackagePath>
       <Modified>2016-11-19T22:21:36.223</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Images\Y_Symetrie.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Images\Y_Symetrie.png">
       <PackagePath>Images\Y_Symetrie.png</PackagePath>
       <Modified>2016-11-16T18:28:53.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T16:20:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:08:52.847</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:46:27.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T20:57:22.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T21:12:48.493</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-16T16:18:23.165</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\bin\x86\Debug\Paint.xr.xml">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\Paint.xr.xml">
       <PackagePath>Paint.xr.xml</PackagePath>
-      <Modified>2016-11-24T19:48:17.499</Modified>
+      <Modified>2016-11-25T21:41:32.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.10586.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -658,13 +658,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-10-22T18:33:58.816</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-11-24T21:15:19.691</Modified>
+      <Modified>2016-11-25T21:41:34.505</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\Visual Studio 2015\Projects\Paint\Paint\bin\x86\Debug\Core\Paint.exe">
+    <AppxPackagedFile Include="C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\Core\Paint.exe">
       <PackagePath>Paint.exe</PackagePath>
-      <Modified>2016-11-24T21:15:20.881</Modified>
+      <Modified>2016-11-25T21:41:35.613</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

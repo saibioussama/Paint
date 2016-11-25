@@ -5,6 +5,8 @@
     xmlns:local="using:Paint"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Paint.Models"
+    Loaded="Page_Loaded"
     mc:Ignorable="d">
 
     <Grid Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >-->
@@ -60,14 +62,15 @@
                           Grid.Row="2" 
                       Background="{ThemeResource AppBarBackgroundThemeBrush}">
             <StackPanel Orientation="Horizontal">
-                <Button Name="Red" Click="Red_Click" Background="red" Width="30" Height="30" Margin="5"/>
-                <Button Name="Blue" Click="Blue_Click" Background="DarkBlue" Width="30" Height="30" Margin="5"/>
-                <Button Name="Green" Click="Green_Click" Background="DarkGreen" Width="30" Height="30" Margin="5"/>
-                <Button Name="Yello" Click="Yello_Click" Background="Yellow" Width="30" Height="30" Margin="5"/>
-                <Button Name="LightGray" Click="LightGray_Click" Background="LightGray" Width="30" Height="30" Margin="5"/>
-                <Button Name="Black" Click="Black_Click" Background="Black" Width="30" Height="30" Margin="5"/>
-                <Button Name="Gray" Click="Gray_Click" Background="Gray" Width="30" Height="30" Margin="5"/>
-                <Button Name="White" Click="White_Click" Background="White" Width="30" Height="30" Margin="5" BorderBrush="Black" BorderThickness="1"/>
+                <GridView Name="MyGridView" IsItemClickEnabled="True" ItemClick="MyGridView_ItemClick">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="data:ToolBarColor">
+                            <Grid Width="30" Height="30" BorderBrush="Gray"
+                                  BorderThickness="1"   
+                                  Background="{x:Bind NameColor}"/>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
             </StackPanel>
         </ScrollViewer>
         <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto"

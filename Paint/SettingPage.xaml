@@ -5,63 +5,19 @@
     xmlns:local="using:Paint"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Paint.Models"
     mc:Ignorable="d">
 
     <Grid Name="Grid1" Padding="10"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
         <StackPanel>
             <TextBlock Text="Choose background color :" FontSize="25"/>
-            <GridView Padding="10" MaxWidth="400" HorizontalAlignment="Left" Name="MyGridView" SelectionChanged="MyGridView_SelectionChanged">
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="DarkRed"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="DarkBlue"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="DarkGray"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="DarkGreen"/>
-                </GridViewItem>
-                <GridViewItem Margin="5" BorderBrush="Gray" BorderThickness="1">
-                    <Rectangle Width="50" Height="50" Fill="White"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="Black"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="Yellow"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="GreenYellow"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="DeepSkyBlue"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="DeepPink"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="Blue"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="Red"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="AliceBlue"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="Coral"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="Violet"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="YellowGreen"/>
-                </GridViewItem>
-                <GridViewItem Margin="5">
-                    <Rectangle Width="50" Height="50" Fill="WhiteSmoke"/>
-                </GridViewItem>
+            <GridView Padding="10" HorizontalAlignment="Left" Name="MyGridView" SelectionChanged="MyGridView_SelectionChanged">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="data:BackgroundColor">
+                        <Rectangle Width="75" Height="75" Stroke="gray" StrokeThickness="2"
+                                   Fill="{x:Bind NameColor}" Margin="5"/>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
             </GridView>
         </StackPanel>
     </Grid>

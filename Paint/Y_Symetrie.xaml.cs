@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Paint.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Numerics;
@@ -68,81 +70,20 @@ namespace Paint
             int n = -1;
             if (ApplicationData.Current.RoamingSettings.Values["Background"] != null)
                 n = Convert.ToInt32(ApplicationData.Current.RoamingSettings.Values["Background"]);
-            SolidColorBrush c;
-            switch (n)
-            {
-                case -1: c = new SolidColorBrush(Colors.White); break;
-                case 0: c = new SolidColorBrush(Colors.DarkRed); break;
-                case 1: c = new SolidColorBrush(Colors.DarkBlue); break;
-                case 2: c = new SolidColorBrush(Colors.DarkGray); break;
-                case 3: c = new SolidColorBrush(Colors.DarkGreen); break;
-                case 4: c = new SolidColorBrush(Colors.White); break;
-                case 5: c = new SolidColorBrush(Colors.Black); break;
-                case 6: c = new SolidColorBrush(Colors.Yellow); break;
-                case 7: c = new SolidColorBrush(Colors.GreenYellow); break;
-                case 8: c = new SolidColorBrush(Colors.DeepSkyBlue); break;
-                case 9: c = new SolidColorBrush(Colors.DeepPink); break;
-                case 10: c = new SolidColorBrush(Colors.Blue); break;
-                case 11: c = new SolidColorBrush(Colors.Red); break;
-                case 12: c = new SolidColorBrush(Colors.AliceBlue); break;
-                case 13: c = new SolidColorBrush(Colors.Coral); break;
-                case 14: c = new SolidColorBrush(Colors.Violet); break;
-                case 15: c = new SolidColorBrush(Colors.YellowGreen); break;
-                case 16: c = new SolidColorBrush(Colors.WhiteSmoke); break;
+            SolidColorBrush c = new SolidColorBrush();
+            c = BackgroundColor.GetBackground(n);
 
-                default: c = new SolidColorBrush(Colors.White); break;
-
-            }
             Grid1.Background = c;
             Grid2.Background = c;
         }
 
-        private void Red_Click(object sender, RoutedEventArgs e)
+        private void MyGridView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            attr.Color = Colors.Red;
+            var color = e.ClickedItem as ToolBarColor;
+            attr.Color = ToolBarColor.GetColor(color.Id);
             UpdateInkPresenter();
         }
 
-        private void Blue_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.DarkBlue;
-            UpdateInkPresenter();
-        }
-
-        private void Green_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.DarkGreen;
-            UpdateInkPresenter();
-        }
-
-        private void Yello_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.Yellow;
-            UpdateInkPresenter();
-        }
-
-        private void LightGray_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.LightGray;
-            UpdateInkPresenter();
-        }
-
-        private void Black_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.Black;
-            UpdateInkPresenter();
-        }
-
-        private void Gray_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.Gray;
-            UpdateInkPresenter();
-        }
-        private void White_Click(object sender, RoutedEventArgs e)
-        {
-            attr.Color = Colors.White;
-            UpdateInkPresenter();
-        }
         private void RestartButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Y_Symetrie));
@@ -186,6 +127,10 @@ namespace Paint
             }
         }
 
-
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            ObservableCollection<ToolBarColor> ListOfColor = new ObservableCollection<ToolBarColor>(ToolBarColor.AllColor());
+            MyGridView.ItemsSource = ListOfColor;
+        }
     }
 }
