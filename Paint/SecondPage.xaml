@@ -5,47 +5,23 @@
     xmlns:local="using:Paint"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Paint.Models"
     mc:Ignorable="d">
 
     <StackPanel Padding="10" Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
-        <TextBlock Text="Choose Template :" Margin="10" HorizontalAlignment="Center"/>
-        <GridView Name="MyGridView"   SelectionChanged="MyGridView_SelectionChanged">
-            <GridViewItem Name="GridViewItem1" Width="340" Background="DodgerBlue">
-                <Grid>
-                    <Image x:Name="image" Source="Images/EmptyPageImg.png" Stretch="Uniform" />
-                    <Rectangle Fill="#66000000"/>
-                    <TextBlock Foreground="White" HorizontalAlignment="Center" 
-                               Text="Empty Page" FontWeight="Bold" VerticalAlignment="Center"/>
-                </Grid>
-            </GridViewItem>
-            <GridViewItem Name="GridViewItem2" Background="DodgerBlue">
-                <Grid>
-                        <Image x:Name="image1" Source="Images/Y_Symetrie.png" Stretch="Uniform" />
-                        <Rectangle Fill="#66000000"/>
-                    <TextBlock Foreground="White" HorizontalAlignment="Center"
-                               Text="Symetire_Y page" FontWeight="Bold" VerticalAlignment="Center"/>
-                </Grid>
-                
-            </GridViewItem>
-            <GridViewItem Name="GridViewItem3" Background="DodgerBlue">
-                
-                    
-                    <Grid>
-                        <Image x:Name="image2" Source="Images/X_Y_Symetrie.png" Stretch="Uniform" />
-                        <Rectangle Fill="#66000000"/>
-                        <TextBlock Foreground="White" HorizontalAlignment="Center" 
-                               Text="Symetrie_X_Y page" FontWeight="Bold" VerticalAlignment="Center"/>
-                </Grid>
-                
-            </GridViewItem>
-            <GridViewItem Name="GridViewItem4" Background="DodgerBlue">
-                <Grid>
-                    <Image x:Name="image3" Source="Images/X_Y_Z_Symetrie.png" Stretch="Uniform" />
-                    <Rectangle Fill="#66000000"/>
-                    <TextBlock Foreground="White" HorizontalAlignment="Center" 
-                               Text="Symetrie_X_Y_Z page" FontWeight="Bold" VerticalAlignment="Center" />
-                </Grid>
-            </GridViewItem>
-        </GridView>
+         <GridView Name="MyGridView" Header="Choose Template :"  SelectionChanged="MyGridView_SelectionChanged">
+            <GridView.ItemTemplate >
+                <DataTemplate x:DataType="data:MyTemplates">
+                    <Grid Width="250">
+                        <Image  Source="{Binding ImageSource}" Stretch="Uniform" />
+                        <Rectangle Fill="{ThemeResource SystemControlBackgroundAltMediumLowBrush}"/>
+                        <TextBlock HorizontalAlignment="Center" 
+                               Text="{Binding NameTemplate}" FontWeight="Bold" 
+                               VerticalAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+         </GridView>
+       
     </StackPanel>
 </Page>

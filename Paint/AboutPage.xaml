@@ -7,25 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Padding="20" ><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
-        <TextBlock Text="Perfect Paint" FontWeight="SemiBold" FontSize="28" 
+    <Grid>
+      <StackPanel Padding="20" >
+            <!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+            <TextBlock Text="Perfect Paint" FontWeight="SemiBold" FontSize="28" 
                    Margin="10"/>
-        <TextBlock>
-            
-        </TextBlock>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="App version : " />
-            <TextBlock Text="" Name="AppVersionTexBlock" Margin="10,0,0,0" />
+            <TextBlock TextWrapping="WrapWholeWords" FontWeight="Thin" FontSize="20" Margin="20">
+            This app help you to paint things uses symmetry axes
+            </TextBlock>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="App version : " />
+                <TextBlock Text="" Name="AppVersionTexBlock" Margin="10,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="developed by : " />
+                <TextBlock Text="Saibi Oussama" Margin="10,0,0,0"  />
+            </StackPanel>
+
         </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="developed by : " />
-            <TextBlock Text="Saibi Oussama" Margin="10,0,0,0"  />
-        </StackPanel>
-        
         <Button Content="Review"  HorizontalAlignment="Stretch" Margin="20" 
-                MaxWidth="300" Name="ReviewButton" Click="ReviewButton_Click"/>
-        
-
-
-    </StackPanel>
+                MaxWidth="300" Name="ReviewButton" VerticalAlignment="Bottom" Click="ReviewButton_Click"/>
+    </Grid>
 </Page>

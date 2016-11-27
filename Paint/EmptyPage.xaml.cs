@@ -70,41 +70,36 @@ namespace Paint
 
         private void SetBackground()
         {
-            int n = -1;
-            if (ApplicationData.Current.RoamingSettings.Values["Background"] != null)
-                n = Convert.ToInt32(ApplicationData.Current.RoamingSettings.Values["Background"]);
             SolidColorBrush c = new SolidColorBrush();
-            c = BackgroundColor.GetBackground(n);            
+            c = BackgroundColor.GetBackground();            
             Grid1.Background = c;
-
-
         }
-        private async void save()
-        {
-            if (InkCanvas1.InkPresenter.StrokeContainer.GetStrokes().Count > 0)
-            {
-                var savePicker = new Windows.Storage.Pickers.FileSavePicker();
-                savePicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
-                savePicker.FileTypeChoices.Add("PNG", new System.Collections.Generic.List<string> { ".png" });
+        //private async void save()
+        //{
+        //    if (InkCanvas1.InkPresenter.StrokeContainer.GetStrokes().Count > 0)
+        //    {
+        //        var savePicker = new Windows.Storage.Pickers.FileSavePicker();
+        //        savePicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
+        //        savePicker.FileTypeChoices.Add("PNG", new System.Collections.Generic.List<string> { ".png" });
 
-                Windows.Storage.StorageFile file = await savePicker.PickSaveFileAsync();
-                if (null != file)
-                {
-                    try
-                    {
-                        using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.ReadWrite))
-                        {
-                            await InkCanvas1.InkPresenter.StrokeContainer.SaveAsync(stream);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageDialog mbox = new MessageDialog("error");
-                        await mbox.ShowAsync();
-                    }
-                }
-            }
-        }
+        //        Windows.Storage.StorageFile file = await savePicker.PickSaveFileAsync();
+        //        if (null != file)
+        //        {
+        //            try
+        //            {
+        //                using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.ReadWrite))
+        //                {
+        //                    await InkCanvas1.InkPresenter.StrokeContainer.SaveAsync(stream);
+        //                }
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                MessageDialog mbox = new MessageDialog("error");
+        //                await mbox.ShowAsync();
+        //            }
+        //        }
+        //    }
+        //}
         private void MyGridView_ItemClick(object sender, ItemClickEventArgs e)
         {
             var color = e.ClickedItem as ToolBarColor;

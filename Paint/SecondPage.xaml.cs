@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Paint.Models;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,7 +27,7 @@ namespace Paint
         public SecondPage()
         {
             this.InitializeComponent();
-             
+            MyGridView.ItemsSource = MyTemplates.AllTemplate();           
         }
          
         private void MyGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)

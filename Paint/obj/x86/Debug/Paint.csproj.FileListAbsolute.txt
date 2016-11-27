@@ -351,7 +351,6 @@ C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\System.Xml.Read
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\Paint.csprojResolveAssemblyReference.cache
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\App.g.i.cs
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\App.g.cs
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\AboutPage.g.i.cs

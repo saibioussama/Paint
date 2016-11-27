@@ -10,15 +10,19 @@
 
     <Grid Name="Grid1" Padding="10"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
         <StackPanel>
-            <TextBlock Text="Choose background color :" FontSize="25"/>
-            <GridView Padding="10" HorizontalAlignment="Left" Name="MyGridView" SelectionChanged="MyGridView_SelectionChanged">
+
+            <GridView Header="Choose background color :" Padding="10" HorizontalAlignment="Left" Name="MyGridView" SelectionChanged="MyGridView_SelectionChanged">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="data:BackgroundColor">
-                        <Rectangle Width="75" Height="75" Stroke="gray" StrokeThickness="2"
+                        <Rectangle Width="50" Height="50" Stroke="gray" StrokeThickness="2"
                                    Fill="{x:Bind NameColor}" Margin="5"/>
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
+            <ToggleSwitch Header="Theme (Light/Dark) :"
+                          Name="ToggleTheme"
+                          OnContent="Light" OffContent="Dark" 
+                          Toggled="ToggleSwitch_Toggled"/>
         </StackPanel>
     </Grid>
 </Page>

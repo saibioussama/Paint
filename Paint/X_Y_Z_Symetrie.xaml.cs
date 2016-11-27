@@ -81,11 +81,9 @@ namespace Paint
 
         private void SetBackground()
         {
-            int n = -1;
-            if (ApplicationData.Current.RoamingSettings.Values["Background"] != null)
-                n = Convert.ToInt32(ApplicationData.Current.RoamingSettings.Values["Background"]);
+            
             SolidColorBrush c = new SolidColorBrush();
-            c = BackgroundColor.GetBackground(n);
+            c = BackgroundColor.GetBackground();
 
             Grid1.Background = c;
             Grid2.Background = c;

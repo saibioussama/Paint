@@ -7,15 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid  Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
-        <StackPanel  HorizontalAlignment="Stretch" VerticalAlignment="Center">
-            <TextBlock Text="Paint" TextWrapping="WrapWholeWords" FontWeight="Bold" Margin="10,0,0,0"
+    <Grid Padding="0,30,0,0" Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+    
+            <TextBlock Text="Symmetry Paint" TextWrapping="WrapWholeWords" FontWeight="Bold"  Margin="0,20,0,0"
                        FontSize="42" FontFamily="MS Gothic" HorizontalAlignment="Center"/>
      
             <Button Content="Start" FontSize="35"  HorizontalAlignment="Center"
-                    Margin="20,50,20,20"  Width="300"
-                    Foreground="White" FontWeight="Bold" Name="StartButton"
-                    Click="StartButton_Click"/>
-        </StackPanel>
+                    Width="300" Name="StartButton"
+                    FontWeight="Bold" Click="StartButton_Click"/>
+        
     </Grid>
 </Page>

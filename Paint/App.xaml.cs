@@ -35,6 +35,17 @@ namespace Paint
             //set();
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            //this.RequestedTheme = ApplicationTheme.Light;
+            try
+            {
+                if (ApplicationData.Current.RoamingSettings.Values["Theme"].ToString() == "Dark")
+                    this.RequestedTheme = ApplicationTheme.Dark;
+                else this.RequestedTheme = ApplicationTheme.Light;
+            }
+            catch
+            {
+                this.RequestedTheme = ApplicationTheme.Dark;
+            }
         }
 
         //private async void set()        
@@ -59,7 +70,7 @@ namespace Paint
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected async override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             //MessageDialog mb = new MessageDialog("hello world !!");
             //await mb.ShowAsync();
@@ -120,7 +131,7 @@ namespace Paint
         /// </summary>
         /// <param name="sender">The source of the suspend request.</param>
         /// <param name="e">Details about the suspend request.</param>
-        private async void OnSuspending(object sender, SuspendingEventArgs e)
+        private void OnSuspending(object sender, SuspendingEventArgs e)
         {        
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity

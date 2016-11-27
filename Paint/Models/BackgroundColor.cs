@@ -66,10 +66,20 @@ namespace Paint.Models
             }
         }
 
-        static public SolidColorBrush GetBackground(int x)
+        static public SolidColorBrush GetBackground()
         {
+            int n = -1;
+            try
+            {
+                if (ApplicationData.Current.RoamingSettings.Values["Background"] != null)
+                    n = Convert.ToInt32(ApplicationData.Current.RoamingSettings.Values["Background"]);
+            }
+            catch
+            {
+                n = -1;
+            }
             SolidColorBrush c = new SolidColorBrush();
-            switch (x)
+            switch (n)
             {
                 case -1: c = new SolidColorBrush(Colors.White); break;
                 case 0: c = new SolidColorBrush(Colors.DarkRed); break;

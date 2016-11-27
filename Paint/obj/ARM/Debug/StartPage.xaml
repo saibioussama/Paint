@@ -7,16 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:ConnectionId='1'  Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
-        <StackPanel  HorizontalAlignment="Stretch" VerticalAlignment="Center">
-            <TextBlock Text="Paint" TextWrapping="WrapWholeWords" FontWeight="Bold" Margin="10,0,0,0"
+    <Grid x:ConnectionId='1' Padding="0,30,0,0" Name="Grid"><!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+    
+            <TextBlock Text="Symmetry Paint" TextWrapping="WrapWholeWords" FontWeight="Bold"  Margin="0,20,0,0"
                        FontSize="42" FontFamily="MS Gothic" HorizontalAlignment="Center"/>
      
             <Button x:ConnectionId='2' Content="Start" FontSize="35"  HorizontalAlignment="Center"
-                    Margin="20,50,20,20"  Width="300"
-                    Foreground="White" FontWeight="Bold" Name="StartButton"
-                                             />
-        </StackPanel>
+                    Width="300" Name="StartButton"
+                    FontWeight="Bold"                          />
+        
     </Grid>
 </Page>
 
