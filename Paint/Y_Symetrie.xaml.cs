@@ -71,7 +71,7 @@ namespace Paint
              
             SolidColorBrush c = new SolidColorBrush();
             c = BackgroundColor.GetBackground();
-
+             
             Grid1.Background = c;
             Grid2.Background = c;
         }

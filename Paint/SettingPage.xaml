@@ -14,7 +14,7 @@
             <GridView Header="Choose background color :" Padding="10" HorizontalAlignment="Left" Name="MyGridView" SelectionChanged="MyGridView_SelectionChanged">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="data:BackgroundColor">
-                        <Rectangle Width="50" Height="50" Stroke="gray" StrokeThickness="2"
+                        <Ellipse Width="50" Height="50" Stroke="gray" StrokeThickness="2"
                                    Fill="{x:Bind NameColor}" Margin="5"/>
                     </DataTemplate>
                 </GridView.ItemTemplate>

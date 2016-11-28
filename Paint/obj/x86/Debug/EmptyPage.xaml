@@ -29,11 +29,12 @@
                           ScrollViewer.VerticalScrollMode="Disabled" Grid.Row="2"
                           Background="{ThemeResource AppBarBackgroundThemeBrush}">
                 <StackPanel Orientation="Horizontal">
-                <GridView x:ConnectionId='7' Name="MyGridView" IsItemClickEnabled="True"                                 >
+                <GridView x:ConnectionId='7' Name="MyGridView" IsItemClickEnabled="True"
+                                                          >
                     <GridView.ItemTemplate>
                         <DataTemplate                               >
                             <Grid x:ConnectionId='8' Width="30" Height="30" BorderBrush="Gray"
-                                  BorderThickness="1"   
+                                  BorderThickness="1"  CornerRadius="5"
                                                                  />
                         </DataTemplate>
                     </GridView.ItemTemplate>

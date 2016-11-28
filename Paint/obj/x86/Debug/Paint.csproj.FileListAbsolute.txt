@@ -461,3 +461,4 @@ C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\qualifiers.txt
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\SAIBIOUSSAMA\Documents\GitHub\Paint\Paint\obj\x86\Debug\Paint.csprojResolveAssemblyReference.cache

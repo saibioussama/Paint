@@ -112,9 +112,6 @@
       <RootProperty Name="Fill" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Stroke" />
-      <RootProperty Name="StrokeThickness" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
     </RootType>
@@ -137,6 +134,14 @@
       <RootProperty Name="OnContent" />
       <RootProperty Name="OffContent" />
       <RootEvent Name="Toggled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Paint.SettingPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
